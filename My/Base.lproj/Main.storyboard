@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HomeVC-->
+        <!--Hi :)-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="HomeVC" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,25 +19,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Khoa" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-GO-5aK" customClass="CustomAvatar" customModule="MyCV" customModuleProvider="target">
-                                <frame key="frameInset" minX="2.50%" minY="50.93%" width="94.38%" height="407"/>
+                                <frame key="frameInset" minX="2.81%" minY="51.85%" width="94.38%" height="406"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Hi :)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <frame key="frameInset" minX="0.0%" minY="5.32%" width="100.00%" height="42"/>
+                                <frame key="frameInset" minX="0.0%" minY="5.51%" width="100.94%" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="I'm " textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4bZ-DI-FCy">
-                                <frame key="frameInset" minX="0.0%" minY="19.62%" width="100.00%" height="43"/>
+                                <frame key="frameInset" minX="0.31%" minY="19.62%" width="100.63%" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" red="0.93363546090000005" green="0.98129818579999994" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Blogger" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-PB-cks">
-                                <frame key="frameInset" minX="0.0%" minY="36.76%" width="100.00%" height="43"/>
+                                <frame key="frameInset" minX="0.31%" minY="36.95%" width="100.63%" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" red="0.97138717029999999" green="0.98607772439999997" blue="0.94664171090000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,7 +46,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Hi :)" image="HiTabbar" badgeValue="2" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="avatarImg" destination="b2f-GO-5aK" id="wGr-Ak-lYd"/>
                         <outlet property="helloLbl" destination="KQZ-1w-vlD" id="MP9-cu-x4n"/>
@@ -56,12 +56,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-783.75" y="-788.02816901408448"/>
+            <point key="canvasLocation" x="-3242" y="-154"/>
         </scene>
-        <!--Second-->
+        <!--My CV-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="MyResumeVC" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -90,11 +90,11 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="My CV" image="MyResume" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="182" y="-788"/>
+            <point key="canvasLocation" x="-2406" y="-154"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -111,16 +111,36 @@
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="x9c-fw-Cnb" kind="relationship" relationship="viewControllers" id="xVA-NY-2ub"/>
                         <segue destination="qOo-MR-w6i" kind="relationship" relationship="viewControllers" id="fJa-qu-riA"/>
+                        <segue destination="paj-P9-1Ig" kind="relationship" relationship="viewControllers" id="ulR-Us-HKK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1889" y="-673"/>
+            <point key="canvasLocation" x="-1701" y="-965"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="uqd-yR-9wu">
+            <objects>
+                <viewController id="paj-P9-1Ig" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P52-hA-Sz3"/>
+                        <viewControllerLayoutGuide type="bottom" id="FEw-4x-ovx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wAY-Ww-IPJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" badgeValue="3" systemItem="more" id="2YY-rp-JIH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHu-7d-BRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176" y="-154"/>
+        </scene>
+        <!--My Skills-->
         <scene sceneID="JUO-B9-MGh">
             <objects>
-                <viewController id="x9c-fw-Cnb" sceneMemberID="viewController">
+                <viewController id="x9c-fw-Cnb" customClass="MySkillsVC" customModule="MyCV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="21K-Hh-77w"/>
                         <viewControllerLayoutGuide type="bottom" id="Gi2-Aa-Jvk"/>
@@ -130,13 +150,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="w00-dc-3jh"/>
+                    <tabBarItem key="tabBarItem" title="My Skills" image="MySkill" badgeValue="69" id="w00-dc-3jh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBJ-ZY-wxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-783" y="-27"/>
+            <point key="canvasLocation" x="-1509" y="-154"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Me-->
         <scene sceneID="Lsh-eW-6Vp">
             <objects>
                 <viewController id="qOo-MR-w6i" sceneMemberID="viewController">
@@ -149,15 +169,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="B4a-E3-zCr"/>
+                    <tabBarItem key="tabBarItem" title="Contact Me" image="ContactMe" id="B4a-E3-zCr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zCX-0N-t4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="154" y="-32"/>
+            <point key="canvasLocation" x="-623" y="-154"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ContactMe" width="25" height="25"/>
+        <image name="HiTabbar" width="25" height="25"/>
         <image name="Khoa" width="400" height="400"/>
-        <image name="second" width="30" height="30"/>
+        <image name="MyResume" width="25" height="25"/>
+        <image name="MySkill" width="25" height="25"/>
     </resources>
 </document>

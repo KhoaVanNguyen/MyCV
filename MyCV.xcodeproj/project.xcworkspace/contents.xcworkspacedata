@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:My.xcodeproj">
+      location = "self:/Users/khoa/Documents/DATA/Learning IOS/My/MyCV.xcodeproj">
    </FileRef>
 </Workspace>

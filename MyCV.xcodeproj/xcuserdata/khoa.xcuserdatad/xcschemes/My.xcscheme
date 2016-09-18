@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D280610E1D8D8CD50052FAC7"
-               BuildableName = "My.app"
-               BlueprintName = "My"
-               ReferencedContainer = "container:My.xcodeproj">
+               BuildableName = "MyCV.app"
+               BlueprintName = "MyCV"
+               ReferencedContainer = "container:MyCV.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D28061241D8D8CD50052FAC7"
-               BuildableName = "MyTests.xctest"
-               BlueprintName = "MyTests"
-               ReferencedContainer = "container:My.xcodeproj">
+               BuildableName = "MyCVTests.xctest"
+               BlueprintName = "MyCVTests"
+               ReferencedContainer = "container:MyCV.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D280612F1D8D8CD50052FAC7"
-               BuildableName = "MyUITests.xctest"
-               BlueprintName = "MyUITests"
-               ReferencedContainer = "container:My.xcodeproj">
+               BuildableName = "MyCVUITests.xctest"
+               BlueprintName = "MyCVUITests"
+               ReferencedContainer = "container:MyCV.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D280610E1D8D8CD50052FAC7"
-            BuildableName = "My.app"
-            BlueprintName = "My"
-            ReferencedContainer = "container:My.xcodeproj">
+            BuildableName = "MyCV.app"
+            BlueprintName = "MyCV"
+            ReferencedContainer = "container:MyCV.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D280610E1D8D8CD50052FAC7"
-            BuildableName = "My.app"
-            BlueprintName = "My"
-            ReferencedContainer = "container:My.xcodeproj">
+            BuildableName = "MyCV.app"
+            BlueprintName = "MyCV"
+            ReferencedContainer = "container:MyCV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D280610E1D8D8CD50052FAC7"
-            BuildableName = "My.app"
-            BlueprintName = "My"
-            ReferencedContainer = "container:My.xcodeproj">
+            BuildableName = "MyCV.app"
+            BlueprintName = "MyCV"
+            ReferencedContainer = "container:MyCV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

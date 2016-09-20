@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceCodePro-Regular.ttf">
+            <string>SourceCodePro-Regular</string>
+        </array>
+        <array key="SourceCodePro-Semibold.ttf">
+            <string>SourceCodePro-Semibold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Hi :)-->
         <scene sceneID="hNz-n2-bh7">
@@ -19,27 +27,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Khoa" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-GO-5aK" customClass="CustomAvatar" customModule="MyCV" customModuleProvider="target">
-                                <frame key="frameInset" minX="2.81%" minY="51.85%" width="94.38%" height="406"/>
+                                <frame key="frameInset" minX="2.81%" minY="30.71%" width="94.38%" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Hi :)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <frame key="frameInset" minX="0.0%" minY="5.51%" width="100.94%" height="42"/>
+                                <frame key="frameInset" minX="-0.62%" minY="5.52%" width="101.56%" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="SourceCodePro-Regular" family="Source Code Pro" pointSize="37"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="I'm " textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4bZ-DI-FCy">
-                                <frame key="frameInset" minX="0.31%" minY="19.62%" width="100.63%" height="43"/>
+                                <frame key="frameInset" minX="0.62%" minY="19.62%" width="100.31%" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="SourceCodePro-Regular" family="Source Code Pro" pointSize="36"/>
                                 <color key="textColor" red="0.93363546090000005" green="0.98129818579999994" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Blogger" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-PB-cks">
-                                <frame key="frameInset" minX="0.31%" minY="36.95%" width="100.63%" height="43"/>
+                                <frame key="frameInset" minX="0.62%" minY="36.83%" width="100.31%" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="SourceCodePro-Semibold" family="Source Code Pro" pointSize="36"/>
                                 <color key="textColor" red="0.97138717029999999" green="0.98607772439999997" blue="0.94664171090000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -70,31 +78,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbook coding" translatesAutoresizingMaskIntoConstraints="NO" id="Y3c-aM-eSF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="deZ-Qz-Wak"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qjh-D8-Hgy" customClass="FancyView" customModule="MyCV" customModuleProvider="target">
+                                <frame key="frameInset" minX="6" minY="82" width="307" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Khoa" translatesAutoresizingMaskIntoConstraints="NO" id="fFx-eH-Oqr" customClass="CustomAvatar" customModule="MyCV" customModuleProvider="target">
+                                        <frame key="frameInset" minX="79" minY="-43" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="Y3c-aM-eSF" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="Fo9-lM-a7Y"/>
+                            <constraint firstItem="Y3c-aM-eSF" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Q8h-he-dQc"/>
+                            <constraint firstAttribute="trailing" secondItem="Y3c-aM-eSF" secondAttribute="trailing" id="T4m-bP-9R1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="My CV" image="MyResume" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2406" y="-154"/>
+            <point key="canvasLocation" x="-2407.5" y="-154.22535211267606"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -182,5 +194,6 @@
         <image name="Khoa" width="400" height="400"/>
         <image name="MyResume" width="25" height="25"/>
         <image name="MySkill" width="25" height="25"/>
+        <image name="macbook coding" width="1920" height="1485"/>
     </resources>
 </document>

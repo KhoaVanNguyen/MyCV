@@ -12,13 +12,24 @@ class CustomAvatar: UIImageView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        setup()
         
-        layer.cornerRadius = 8
     }
     override func layoutSubviews() {
         super.layoutSubviews()
         
         //layer.cornerRadius = self.frame.width / 2
     }
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        setup()
+    }
+    func setup(){
+        layer.masksToBounds = true
+        layer.cornerRadius = layer.bounds.width / 2
+        layer.shadowRadius = 0.4
+        layer.shadowOpacity = 0.8
+        layer.shadowOffset = CGSize.zero
 
+    }
 }

@@ -58,6 +58,11 @@
 		<string>SourceCodePro-Semibold.ttf</string>
 		<string>SourceCodePro-Light.ttf</string>
 		<string>SourceCodePro-Regular.ttf</string>
+		<string>SourceSansPro-Light.ttf</string>
+		<string>SourceSansPro-LightItalic.ttf</string>
+		<string>SourceSansPro-Regular.ttf</string>
+		<string>SourceSansPro-Semibold.ttf</string>
+		<string>SourceSansPro-SemiboldItalic.ttf</string>
 	</array>
 </dict>
 </plist>

@@ -26,26 +26,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Khoa" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-GO-5aK" customClass="CustomAvatar" customModule="MyCV" customModuleProvider="target">
-                                <frame key="frameInset" minX="2.81%" minY="30.71%" width="94.38%" height="301"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Khoa" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-GO-5aK">
+                                <frame key="frameInset" minX="2.81%" minY="30.97%" width="94.06%" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Hi :)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <frame key="frameInset" minX="-0.62%" minY="5.52%" width="101.56%" height="43"/>
+                                <frame key="frameInset" minX="-0.94%" minY="5.51%" width="101.88%" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceCodePro-Regular" family="Source Code Pro" pointSize="37"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="I'm " textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4bZ-DI-FCy">
-                                <frame key="frameInset" minX="0.62%" minY="19.62%" width="100.31%" height="43"/>
+                                <frame key="frameInset" minX="0.94%" minY="19.62%" width="100.00%" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceCodePro-Regular" family="Source Code Pro" pointSize="36"/>
                                 <color key="textColor" red="0.93363546090000005" green="0.98129818579999994" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Blogger" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-PB-cks">
-                                <frame key="frameInset" minX="0.62%" minY="36.83%" width="100.31%" height="44"/>
+                                <frame key="frameInset" minX="0.94%" minY="36.83%" width="100.00%" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceCodePro-Semibold" family="Source Code Pro" pointSize="36"/>
                                 <color key="textColor" red="0.97138717029999999" green="0.98607772439999997" blue="0.94664171090000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -75,34 +75,66 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbook coding" translatesAutoresizingMaskIntoConstraints="NO" id="Y3c-aM-eSF">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="deZ-Qz-Wak"/>
-                                </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qjh-D8-Hgy" customClass="FancyView" customModule="MyCV" customModuleProvider="target">
-                                <frame key="frameInset" minX="6" minY="82" width="307" height="184"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVf-ng-Sps">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Khoa" translatesAutoresizingMaskIntoConstraints="NO" id="fFx-eH-Oqr" customClass="CustomAvatar" customModule="MyCV" customModuleProvider="target">
-                                        <frame key="frameInset" minX="79" minY="-43" width="130" height="130"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oM4-MH-gi8">
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHS-l4-sFb" customClass="FancyView" customModule="MyCV" customModuleProvider="target">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="iCi-gA-bq7"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbook coding" translatesAutoresizingMaskIntoConstraints="NO" id="ny4-gU-48Y">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="amS-yW-OHq"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Khoa" translatesAutoresizingMaskIntoConstraints="NO" id="Tdq-57-BWy" customClass="CustomAvatar" customModule="MyCV" customModuleProvider="target">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="3st-om-cuV"/>
+                                                    <constraint firstAttribute="height" constant="120" id="Ven-3Z-laJ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ny4-gU-48Y" secondAttribute="trailing" id="3BS-w8-zmP"/>
+                                            <constraint firstItem="Tdq-57-BWy" firstAttribute="centerX" secondItem="ny4-gU-48Y" secondAttribute="centerX" id="3MK-le-5Ud"/>
+                                            <constraint firstAttribute="height" constant="1500" id="4Ge-tU-bnY"/>
+                                            <constraint firstItem="ny4-gU-48Y" firstAttribute="top" secondItem="oM4-MH-gi8" secondAttribute="top" id="6MX-5s-mcB"/>
+                                            <constraint firstAttribute="trailing" secondItem="lHS-l4-sFb" secondAttribute="trailing" constant="8" id="HN3-xG-7Yv"/>
+                                            <constraint firstItem="lHS-l4-sFb" firstAttribute="top" secondItem="ny4-gU-48Y" secondAttribute="bottom" constant="5" id="Iuk-Z1-r3R"/>
+                                            <constraint firstItem="ny4-gU-48Y" firstAttribute="leading" secondItem="oM4-MH-gi8" secondAttribute="leading" id="gmQ-y2-RTR"/>
+                                            <constraint firstItem="Tdq-57-BWy" firstAttribute="top" secondItem="oM4-MH-gi8" secondAttribute="top" constant="80" id="hUH-KK-5T4"/>
+                                            <constraint firstItem="lHS-l4-sFb" firstAttribute="leading" secondItem="oM4-MH-gi8" secondAttribute="leading" constant="8" id="oqz-c0-ev9"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                                <constraints>
+                                    <constraint firstItem="oM4-MH-gi8" firstAttribute="leading" secondItem="mVf-ng-Sps" secondAttribute="leading" id="Fm0-gg-7JY"/>
+                                    <constraint firstItem="oM4-MH-gi8" firstAttribute="top" secondItem="mVf-ng-Sps" secondAttribute="top" id="Y2P-0d-WD7"/>
+                                    <constraint firstAttribute="bottom" secondItem="oM4-MH-gi8" secondAttribute="bottom" id="bSz-WY-Pqm"/>
+                                    <constraint firstAttribute="trailing" secondItem="oM4-MH-gi8" secondAttribute="trailing" id="zjF-6y-i4C"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Y3c-aM-eSF" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="Fo9-lM-a7Y"/>
-                            <constraint firstItem="Y3c-aM-eSF" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Q8h-he-dQc"/>
-                            <constraint firstAttribute="trailing" secondItem="Y3c-aM-eSF" secondAttribute="trailing" id="T4m-bP-9R1"/>
+                            <constraint firstItem="oM4-MH-gi8" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="0Th-Fd-KP9"/>
+                            <constraint firstItem="mVf-ng-Sps" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="AXO-We-DCJ"/>
+                            <constraint firstAttribute="trailing" secondItem="mVf-ng-Sps" secondAttribute="trailing" id="Gih-Zj-fKS"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="mVf-ng-Sps" secondAttribute="bottom" id="H6i-y9-xzL"/>
+                            <constraint firstItem="mVf-ng-Sps" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="MCb-Ox-07u"/>
+                            <constraint firstItem="oM4-MH-gi8" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="gw5-wE-o3u"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="My CV" image="MyResume" id="cPa-gy-q4n"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1500"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

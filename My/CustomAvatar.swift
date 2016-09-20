@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+@IBDesignable
 class CustomAvatar: UIImageView {
 
     override func awakeFromNib() {
@@ -18,17 +18,20 @@ class CustomAvatar: UIImageView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        //layer.cornerRadius = self.frame.width / 2
+        layer.cornerRadius = self.frame.width / 2
     }
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         setup()
     }
     func setup(){
+      
+       // layer.cornerRadius = layer.bounds.width / 2
+        layer.borderWidth = 5.0
+        layer.borderColor = UIColor.white.cgColor
         layer.masksToBounds = true
-        layer.cornerRadius = layer.bounds.width / 2
         layer.shadowRadius = 0.4
-        layer.shadowOpacity = 0.8
+        layer.shadowOpacity = 0.5
         layer.shadowOffset = CGSize.zero
 
     }

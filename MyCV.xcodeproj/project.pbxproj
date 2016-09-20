@@ -26,6 +26,7 @@
 		D295872E1D91A16D00AF1B1D /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D29587281D91A16D00AF1B1D /* SourceSansPro-Regular.ttf */; };
 		D295872F1D91A16D00AF1B1D /* SourceSansPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D29587291D91A16D00AF1B1D /* SourceSansPro-Semibold.ttf */; };
 		D29587301D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D295872A1D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf */; };
+		D29587321D91A5F600AF1B1D /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29587311D91A5F600AF1B1D /* FancyButton.swift */; };
 		D295C4541D8D9AE50015DCB3 /* CustomAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D295C4531D8D9AE50015DCB3 /* CustomAvatar.swift */; };
 		D2BC1D671D8E48AF00F5D378 /* MySkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC1D661D8E48AF00F5D378 /* MySkillsVC.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		D29587281D91A16D00AF1B1D /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
 		D29587291D91A16D00AF1B1D /* SourceSansPro-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.ttf"; sourceTree = "<group>"; };
 		D295872A1D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		D29587311D91A5F600AF1B1D /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		D295C4531D8D9AE50015DCB3 /* CustomAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAvatar.swift; sourceTree = "<group>"; };
 		D2BC1D661D8E48AF00F5D378 /* MySkillsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySkillsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +187,7 @@
 			children = (
 				D295C4531D8D9AE50015DCB3 /* CustomAvatar.swift */,
 				D29587151D917D1700AF1B1D /* FancyView.swift */,
+				D29587311D91A5F600AF1B1D /* FancyButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D28061171D8D8CD50052FAC7 /* MyResumeVC.swift in Sources */,
+				D29587321D91A5F600AF1B1D /* FancyButton.swift in Sources */,
 				D295C4541D8D9AE50015DCB3 /* CustomAvatar.swift in Sources */,
 				D29587161D917D1700AF1B1D /* FancyView.swift in Sources */,
 				D28061131D8D8CD50052FAC7 /* AppDelegate.swift in Sources */,

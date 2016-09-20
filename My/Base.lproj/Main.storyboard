@@ -12,6 +12,15 @@
         <array key="SourceCodePro-Semibold.ttf">
             <string>SourceCodePro-Semibold</string>
         </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+        <array key="SourceSansPro-Semibold.ttf">
+            <string>SourceSansPro-Semibold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Hi :)-->
@@ -27,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Khoa" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-GO-5aK">
-                                <frame key="frameInset" minX="2.81%" minY="30.97%" width="94.06%" height="300"/>
+                                <frame key="frameInset" minX="2.81%" minY="30.97%" width="94.38%" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Hi :)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
@@ -83,9 +92,86 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oM4-MH-gi8">
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHS-l4-sFb" customClass="FancyView" customModule="MyCV" customModuleProvider="target">
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khoa Nguyen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57f-hj-0q7">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="2P9-bd-EBv"/>
+                                                            <constraint firstAttribute="width" constant="146" id="Sfb-xG-EEp"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="Source Sans Pro" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Founder at NIVIKI.COM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3b2-V1-0HM">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="197" id="6R6-mU-W1L"/>
+                                                            <constraint firstAttribute="height" constant="21" id="Hxk-Fc-FjF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="University of Information Technology" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="map-yD-Hng">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="280" id="5hf-tN-D08"/>
+                                                            <constraint firstAttribute="height" constant="38" id="7y6-LI-AFI"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="Source Sans Pro" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vietnam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UE0-bL-980">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="64" id="Pqj-Ay-Z7J"/>
+                                                            <constraint firstAttribute="height" constant="21" id="bHC-Y0-Tdf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="Source Sans Pro" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm the founder of NIVIKI.COM where I tirelessly pursue my vision of sharing my knowledge to everyone" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3n-I4-Wfc">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="dpS-rP-Q5a"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="FtO-fu-7Np">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xc-oJ-Je0" customClass="FancyButton" customModule="MyCV" customModuleProvider="target">
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="Inbox"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNM-1h-Fl5">
+                                                                <color key="backgroundColor" red="0.0" green="0.54509803921568623" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="Accept">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="220" id="EeF-cF-IFd"/>
+                                                            <constraint firstAttribute="height" constant="42" id="FXX-sE-3iU"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstItem="map-yD-Hng" firstAttribute="bottom" secondItem="3b2-V1-0HM" secondAttribute="bottom" constant="35" id="0Dc-Cu-GJj"/>
+                                                    <constraint firstItem="57f-hj-0q7" firstAttribute="centerX" secondItem="lHS-l4-sFb" secondAttribute="centerX" id="3wi-ib-a2N"/>
+                                                    <constraint firstAttribute="trailing" secondItem="E3n-I4-Wfc" secondAttribute="trailing" constant="12" id="4yH-GW-ZGT"/>
+                                                    <constraint firstItem="map-yD-Hng" firstAttribute="centerX" secondItem="lHS-l4-sFb" secondAttribute="centerX" id="5Lq-Ps-6TU"/>
+                                                    <constraint firstItem="UE0-bL-980" firstAttribute="bottom" secondItem="map-yD-Hng" secondAttribute="bottom" constant="18" id="Aq3-qw-sAG"/>
+                                                    <constraint firstItem="E3n-I4-Wfc" firstAttribute="leading" secondItem="lHS-l4-sFb" secondAttribute="leading" constant="12" id="HpP-V4-Qdf"/>
+                                                    <constraint firstItem="3b2-V1-0HM" firstAttribute="centerX" secondItem="lHS-l4-sFb" secondAttribute="centerX" id="OCO-LS-HXX"/>
+                                                    <constraint firstItem="FtO-fu-7Np" firstAttribute="centerX" secondItem="lHS-l4-sFb" secondAttribute="centerX" id="PzU-D6-U0p"/>
+                                                    <constraint firstItem="UE0-bL-980" firstAttribute="centerX" secondItem="lHS-l4-sFb" secondAttribute="centerX" id="ZfW-Mg-CK0"/>
+                                                    <constraint firstItem="57f-hj-0q7" firstAttribute="top" secondItem="lHS-l4-sFb" secondAttribute="top" constant="50" id="cFs-C5-6Et"/>
+                                                    <constraint firstAttribute="bottom" secondItem="E3n-I4-Wfc" secondAttribute="bottom" constant="8" id="hf8-Q3-2gB"/>
                                                     <constraint firstAttribute="height" constant="300" id="iCi-gA-bq7"/>
+                                                    <constraint firstItem="3b2-V1-0HM" firstAttribute="bottom" secondItem="57f-hj-0q7" secondAttribute="bottom" constant="25" id="lmH-UC-K96"/>
+                                                    <constraint firstItem="FtO-fu-7Np" firstAttribute="top" secondItem="UE0-bL-980" secondAttribute="bottom" constant="15" id="xNg-su-B5F"/>
                                                 </constraints>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbook coding" translatesAutoresizingMaskIntoConstraints="NO" id="ny4-gU-48Y">

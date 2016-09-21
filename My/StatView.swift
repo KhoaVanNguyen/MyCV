@@ -15,7 +15,8 @@ class StatView: UIView {
     let skillLable = UILabel()
     
     let bgLayer = CAShapeLayer()
-    @IBInspectable var BGColor : UIColor = UIColor.gray{
+    
+    @IBInspectable var BGColor : UIColor = UIColor.blue {
         didSet{
             configure()
         }
@@ -27,6 +28,11 @@ class StatView: UIView {
         }
     }
     @IBInspectable var SkillName : String = "Programming"{
+        didSet{
+            configure()
+        }
+    }
+    @IBInspectable var TextColor : UIColor = UIColor.black{
         didSet{
             configure()
         }
@@ -84,14 +90,14 @@ class StatView: UIView {
         layer.addSublayer(fgLayer)
         // setup percent label
         percentLabel.font = UIFont.systemFont(ofSize: 12)
-        percentLabel.textColor = UIColor.white
+        editTextColor(textColor: TextColor, label: percentLabel)
         editPercent(range: Total, curValue: CurrentValue)
         percentLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(percentLabel)
         // setup skill name
         skillLable.font = UIFont.systemFont(ofSize: 12)
         editSkillName(skillName: SkillName)
-        skillLable.textColor = UIColor.white
+        editTextColor(textColor: TextColor, label: skillLable)
         skillLable.translatesAutoresizingMaskIntoConstraints = false
         addSubview(skillLable)
         
@@ -103,7 +109,8 @@ class StatView: UIView {
         setupConstraints(PercentMargin,SkillNameMarginX,SkillNameMarginY)
         editSkillName(skillName: SkillName)
         editPercent(range: Total, curValue: CurrentValue)
-      
+        editTextColor(textColor: TextColor, label: percentLabel)
+        editTextColor(textColor: TextColor, label: skillLable)
         let percent = ( CurrentValue/Total ) * 100
         let percentString = String(format: "%.0f", percent)
         percentLabel.text = "\(percentString)%"
@@ -143,6 +150,9 @@ class StatView: UIView {
     func editPercent(range : CGFloat, curValue : CGFloat ){
         fgLayer.strokeEnd = CurrentValue/Total
         percentLabel.text = "\(CurrentValue)/\(Total)"
+    }
+    func editTextColor( textColor : UIColor, label : UILabel ){
+        label.textColor = textColor
     }
 }
 

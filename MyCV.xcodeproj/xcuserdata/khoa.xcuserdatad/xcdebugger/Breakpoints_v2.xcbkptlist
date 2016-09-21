@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "My/StatView.swift"
-            timestampString = "496117985.414777"
+            timestampString = "496123516.634862"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>

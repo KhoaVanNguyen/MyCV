@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2206F031D92E58D00F08066 /* SocialLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2206F021D92E58D00F08066 /* SocialLink.swift */; };
+		D2206F051D92E65100F08066 /* SocialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2206F041D92E65100F08066 /* SocialCell.swift */; };
+		D2206F071D92E7B700F08066 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2206F061D92E7B700F08066 /* MoreVC.swift */; };
+		D2206F091D92F15C00F08066 /* ShowWebsiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2206F081D92F15C00F08066 /* ShowWebsiteVC.swift */; };
 		D24438361D921D53007BFD9E /* DegreesToRadians.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24438351D921D53007BFD9E /* DegreesToRadians.swift */; };
 		D24438381D921DB9007BFD9E /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24438371D921DB9007BFD9E /* StatView.swift */; };
 		D28061131D8D8CD50052FAC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28061121D8D8CD50052FAC7 /* AppDelegate.swift */; };
@@ -30,7 +34,6 @@
 		D29587301D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D295872A1D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf */; };
 		D29587321D91A5F600AF1B1D /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29587311D91A5F600AF1B1D /* FancyButton.swift */; };
 		D295C4541D8D9AE50015DCB3 /* CustomAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D295C4531D8D9AE50015DCB3 /* CustomAvatar.swift */; };
-		D2BC1D671D8E48AF00F5D378 /* MySkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BC1D661D8E48AF00F5D378 /* MySkillsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2206F021D92E58D00F08066 /* SocialLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLink.swift; sourceTree = "<group>"; };
+		D2206F041D92E65100F08066 /* SocialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialCell.swift; sourceTree = "<group>"; };
+		D2206F061D92E7B700F08066 /* MoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		D2206F081D92F15C00F08066 /* ShowWebsiteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowWebsiteVC.swift; sourceTree = "<group>"; };
 		D24438351D921D53007BFD9E /* DegreesToRadians.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DegreesToRadians.swift; sourceTree = "<group>"; };
 		D24438371D921DB9007BFD9E /* StatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
 		D280610F1D8D8CD50052FAC7 /* MyCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +87,6 @@
 		D295872A1D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		D29587311D91A5F600AF1B1D /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		D295C4531D8D9AE50015DCB3 /* CustomAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAvatar.swift; sourceTree = "<group>"; };
-		D2BC1D661D8E48AF00F5D378 /* MySkillsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySkillsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2206F011D92E56D00F08066 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2206F021D92E58D00F08066 /* SocialLink.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		D28061061D8D8CD50052FAC7 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +147,7 @@
 			children = (
 				D28061121D8D8CD50052FAC7 /* AppDelegate.swift */,
 				D295C4561D8D9BE80015DCB3 /* Storyboard */,
+				D2206F011D92E56D00F08066 /* Models */,
 				D295C4521D8D9ACF0015DCB3 /* Views */,
 				D295C4551D8D9B3B0015DCB3 /* Controllers */,
 				D295871E1D91852A00AF1B1D /* Resources */,
@@ -194,6 +209,7 @@
 				D29587151D917D1700AF1B1D /* FancyView.swift */,
 				D29587311D91A5F600AF1B1D /* FancyButton.swift */,
 				D24438371D921DB9007BFD9E /* StatView.swift */,
+				D2206F041D92E65100F08066 /* SocialCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -203,7 +219,8 @@
 			children = (
 				D28061141D8D8CD50052FAC7 /* HomeVC.swift */,
 				D28061161D8D8CD50052FAC7 /* MyResumeVC.swift */,
-				D2BC1D661D8E48AF00F5D378 /* MySkillsVC.swift */,
+				D2206F061D92E7B700F08066 /* MoreVC.swift */,
+				D2206F081D92F15C00F08066 /* ShowWebsiteVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -364,14 +381,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D28061171D8D8CD50052FAC7 /* MyResumeVC.swift in Sources */,
+				D2206F091D92F15C00F08066 /* ShowWebsiteVC.swift in Sources */,
 				D24438361D921D53007BFD9E /* DegreesToRadians.swift in Sources */,
 				D24438381D921DB9007BFD9E /* StatView.swift in Sources */,
+				D2206F071D92E7B700F08066 /* MoreVC.swift in Sources */,
 				D29587321D91A5F600AF1B1D /* FancyButton.swift in Sources */,
 				D295C4541D8D9AE50015DCB3 /* CustomAvatar.swift in Sources */,
 				D29587161D917D1700AF1B1D /* FancyView.swift in Sources */,
+				D2206F051D92E65100F08066 /* SocialCell.swift in Sources */,
 				D28061131D8D8CD50052FAC7 /* AppDelegate.swift in Sources */,
 				D29587191D9182C700AF1B1D /* Constants.swift in Sources */,
-				D2BC1D671D8E48AF00F5D378 /* MySkillsVC.swift in Sources */,
+				D2206F031D92E58D00F08066 /* SocialLink.swift in Sources */,
 				D28061151D8D8CD50052FAC7 /* HomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

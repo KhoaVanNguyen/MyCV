@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MySkillsVC: UIViewController {
+class ContactMeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

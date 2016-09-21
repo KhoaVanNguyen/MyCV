@@ -40,7 +40,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Hi :)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <frame key="frameInset" minX="-0.94%" minY="5.51%" width="101.88%" height="42"/>
+                                <frame key="frameInset" minX="-0.94%" minY="5.52%" width="101.88%" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceCodePro-Regular" family="Source Code Pro" pointSize="37"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -54,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Blogger" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-PB-cks">
-                                <frame key="frameInset" minX="0.94%" minY="36.83%" width="100.00%" height="44"/>
+                                <frame key="frameInset" minX="0.94%" minY="36.90%" width="100.00%" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceCodePro-Semibold" family="Source Code Pro" pointSize="36"/>
                                 <color key="textColor" red="0.97138717029999999" green="0.98607772439999997" blue="0.94664171090000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -185,15 +185,39 @@
                                                     <constraint firstAttribute="height" constant="120" id="Ven-3Z-laJ"/>
                                                 </constraints>
                                             </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaY-Jt-jNB" customClass="FancyView" customModule="MyCV" customModuleProvider="target">
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NzS-a5-yyQ" customClass="StatView" customModule="MyCV" customModuleProvider="target">
+                                                        <frame key="frameInset" minX="8" minY="56" width="194" height="90"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                                <color key="value" red="0.54034710570469768" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="fgColor">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="Gjb-fq-cAF"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="ny4-gU-48Y" secondAttribute="trailing" id="3BS-w8-zmP"/>
                                             <constraint firstItem="Tdq-57-BWy" firstAttribute="centerX" secondItem="ny4-gU-48Y" secondAttribute="centerX" id="3MK-le-5Ud"/>
                                             <constraint firstAttribute="height" constant="1500" id="4Ge-tU-bnY"/>
+                                            <constraint firstItem="OaY-Jt-jNB" firstAttribute="trailing" secondItem="lHS-l4-sFb" secondAttribute="trailing" id="53S-KJ-qGX"/>
                                             <constraint firstItem="ny4-gU-48Y" firstAttribute="top" secondItem="oM4-MH-gi8" secondAttribute="top" id="6MX-5s-mcB"/>
                                             <constraint firstAttribute="trailing" secondItem="lHS-l4-sFb" secondAttribute="trailing" constant="8" id="HN3-xG-7Yv"/>
                                             <constraint firstItem="lHS-l4-sFb" firstAttribute="top" secondItem="ny4-gU-48Y" secondAttribute="bottom" constant="5" id="Iuk-Z1-r3R"/>
+                                            <constraint firstItem="OaY-Jt-jNB" firstAttribute="leading" secondItem="lHS-l4-sFb" secondAttribute="leading" id="VEU-TR-wfl"/>
+                                            <constraint firstItem="OaY-Jt-jNB" firstAttribute="top" secondItem="lHS-l4-sFb" secondAttribute="bottom" constant="8" id="VbQ-CY-JU9"/>
                                             <constraint firstItem="ny4-gU-48Y" firstAttribute="leading" secondItem="oM4-MH-gi8" secondAttribute="leading" id="gmQ-y2-RTR"/>
                                             <constraint firstItem="Tdq-57-BWy" firstAttribute="top" secondItem="oM4-MH-gi8" secondAttribute="top" constant="80" id="hUH-KK-5T4"/>
                                             <constraint firstItem="lHS-l4-sFb" firstAttribute="leading" secondItem="oM4-MH-gi8" secondAttribute="leading" constant="8" id="oqz-c0-ev9"/>
@@ -224,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2407.5" y="-154.22535211267606"/>
+            <point key="canvasLocation" x="-2407.5" y="336.97183098591552"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

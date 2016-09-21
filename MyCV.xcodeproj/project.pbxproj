@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D24438361D921D53007BFD9E /* DegreesToRadians.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24438351D921D53007BFD9E /* DegreesToRadians.swift */; };
+		D24438381D921DB9007BFD9E /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24438371D921DB9007BFD9E /* StatView.swift */; };
 		D28061131D8D8CD50052FAC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28061121D8D8CD50052FAC7 /* AppDelegate.swift */; };
 		D28061151D8D8CD50052FAC7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28061141D8D8CD50052FAC7 /* HomeVC.swift */; };
 		D28061171D8D8CD50052FAC7 /* MyResumeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28061161D8D8CD50052FAC7 /* MyResumeVC.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D24438351D921D53007BFD9E /* DegreesToRadians.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DegreesToRadians.swift; sourceTree = "<group>"; };
+		D24438371D921DB9007BFD9E /* StatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
 		D280610F1D8D8CD50052FAC7 /* MyCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28061121D8D8CD50052FAC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D28061141D8D8CD50052FAC7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -128,11 +132,11 @@
 			isa = PBXGroup;
 			children = (
 				D28061121D8D8CD50052FAC7 /* AppDelegate.swift */,
-				D295871E1D91852A00AF1B1D /* Resources */,
-				D29587171D9182B700AF1B1D /* Ulti */,
 				D295C4561D8D9BE80015DCB3 /* Storyboard */,
-				D295C4551D8D9B3B0015DCB3 /* Controller */,
-				D295C4521D8D9ACF0015DCB3 /* View */,
+				D295C4521D8D9ACF0015DCB3 /* Views */,
+				D295C4551D8D9B3B0015DCB3 /* Controllers */,
+				D295871E1D91852A00AF1B1D /* Resources */,
+				D29587171D9182B700AF1B1D /* Helpers */,
 				D280611B1D8D8CD50052FAC7 /* Assets.xcassets */,
 				D28061201D8D8CD50052FAC7 /* Info.plist */,
 			);
@@ -158,12 +162,13 @@
 			path = MyUITests;
 			sourceTree = "<group>";
 		};
-		D29587171D9182B700AF1B1D /* Ulti */ = {
+		D29587171D9182B700AF1B1D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				D29587181D9182C700AF1B1D /* Constants.swift */,
+				D24438351D921D53007BFD9E /* DegreesToRadians.swift */,
 			);
-			name = Ulti;
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		D295871E1D91852A00AF1B1D /* Resources */ = {
@@ -182,24 +187,25 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		D295C4521D8D9ACF0015DCB3 /* View */ = {
+		D295C4521D8D9ACF0015DCB3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				D295C4531D8D9AE50015DCB3 /* CustomAvatar.swift */,
 				D29587151D917D1700AF1B1D /* FancyView.swift */,
 				D29587311D91A5F600AF1B1D /* FancyButton.swift */,
+				D24438371D921DB9007BFD9E /* StatView.swift */,
 			);
-			name = View;
+			name = Views;
 			sourceTree = "<group>";
 		};
-		D295C4551D8D9B3B0015DCB3 /* Controller */ = {
+		D295C4551D8D9B3B0015DCB3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				D28061141D8D8CD50052FAC7 /* HomeVC.swift */,
 				D28061161D8D8CD50052FAC7 /* MyResumeVC.swift */,
 				D2BC1D661D8E48AF00F5D378 /* MySkillsVC.swift */,
 			);
-			name = Controller;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		D295C4561D8D9BE80015DCB3 /* Storyboard */ = {
@@ -358,6 +364,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D28061171D8D8CD50052FAC7 /* MyResumeVC.swift in Sources */,
+				D24438361D921D53007BFD9E /* DegreesToRadians.swift in Sources */,
+				D24438381D921DB9007BFD9E /* StatView.swift in Sources */,
 				D29587321D91A5F600AF1B1D /* FancyButton.swift in Sources */,
 				D295C4541D8D9AE50015DCB3 /* CustomAvatar.swift in Sources */,
 				D29587161D917D1700AF1B1D /* FancyView.swift in Sources */,

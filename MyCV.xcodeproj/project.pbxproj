@@ -34,6 +34,7 @@
 		D29587301D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D295872A1D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf */; };
 		D29587321D91A5F600AF1B1D /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29587311D91A5F600AF1B1D /* FancyButton.swift */; };
 		D295C4541D8D9AE50015DCB3 /* CustomAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D295C4531D8D9AE50015DCB3 /* CustomAvatar.swift */; };
+		D2FFF9481D9360BA00C89690 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FFF9471D9360BA00C89690 /* ContactVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		D295872A1D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		D29587311D91A5F600AF1B1D /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		D295C4531D8D9AE50015DCB3 /* CustomAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAvatar.swift; sourceTree = "<group>"; };
+		D2FFF9471D9360BA00C89690 /* ContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 				D28061161D8D8CD50052FAC7 /* MyResumeVC.swift */,
 				D2206F061D92E7B700F08066 /* MoreVC.swift */,
 				D2206F081D92F15C00F08066 /* ShowWebsiteVC.swift */,
+				D2FFF9471D9360BA00C89690 /* ContactVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				D24438361D921D53007BFD9E /* DegreesToRadians.swift in Sources */,
 				D24438381D921DB9007BFD9E /* StatView.swift in Sources */,
 				D2206F071D92E7B700F08066 /* MoreVC.swift in Sources */,
+				D2FFF9481D9360BA00C89690 /* ContactVC.swift in Sources */,
 				D29587321D91A5F600AF1B1D /* FancyButton.swift in Sources */,
 				D295C4541D8D9AE50015DCB3 /* CustomAvatar.swift in Sources */,
 				D29587161D917D1700AF1B1D /* FancyView.swift in Sources */,

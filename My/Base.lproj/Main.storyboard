@@ -37,29 +37,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Hi :)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <frame key="frameInset" minX="-0.48%" minY="5.64%" width="100.72%" height="44"/>
+                                <frame key="frameInset" minX="-0.48%" minY="5.64%" width="100.48%" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceCodePro-Regular" family="Source Code Pro" pointSize="37"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="I'm" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4bZ-DI-FCy">
-                                <frame key="frameInset" minX="0.0%" minY="18.81%" width="100.24%" height="45"/>
+                                <frame key="frameInset" minX="0.0%" minY="18.81%" width="100.00%" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceCodePro-Regular" family="Source Code Pro" pointSize="36"/>
                                 <color key="textColor" red="0.93363546090000005" green="0.98129818579999994" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-PB-cks">
-                                <frame key="frameInset" minX="0.0%" minY="36.23%" width="100.24%" height="46"/>
+                                <frame key="frameInset" minX="0.0%" minY="36.09%" width="100.00%" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceCodePro-Semibold" family="Source Code Pro" pointSize="36"/>
                                 <color key="textColor" red="0.97138717029999999" green="0.98607772439999997" blue="0.94664171090000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Khoa" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-GO-5aK">
-                                <frame key="frameInset" minX="2.42%" minY="46.22%" width="94.93%" height="299"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Khoa" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-GO-5aK" customClass="CustomAvatar" customModule="MyCV" customModuleProvider="target">
+                                <frame key="frameInset" minX="50.00%" minY="46.79%" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -713,7 +713,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yDB-G8-jCF">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yDB-G8-jCF">
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSc-YP-B7M">
                                                 <state key="normal" title="Button" image="phone"/>
@@ -741,9 +741,9 @@
                                     <constraint firstItem="yDB-G8-jCF" firstAttribute="top" secondItem="vZR-zK-FKa" secondAttribute="bottom" constant="20" id="7sL-3p-E7a"/>
                                     <constraint firstItem="vZR-zK-FKa" firstAttribute="top" secondItem="Cv7-m8-wcZ" secondAttribute="top" constant="8" id="8ys-9G-16S"/>
                                     <constraint firstAttribute="bottom" secondItem="yDB-G8-jCF" secondAttribute="bottom" constant="8" id="9Yd-XE-t5x"/>
-                                    <constraint firstAttribute="trailing" secondItem="yDB-G8-jCF" secondAttribute="trailing" constant="120" id="HF8-ZK-hQ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="yDB-G8-jCF" secondAttribute="trailing" id="HF8-ZK-hQ3"/>
                                     <constraint firstItem="vZR-zK-FKa" firstAttribute="leading" secondItem="Cv7-m8-wcZ" secondAttribute="leading" constant="8" id="akj-6q-LyT"/>
-                                    <constraint firstItem="yDB-G8-jCF" firstAttribute="leading" secondItem="Cv7-m8-wcZ" secondAttribute="leading" constant="120" id="rPo-xj-hMS"/>
+                                    <constraint firstItem="yDB-G8-jCF" firstAttribute="leading" secondItem="Cv7-m8-wcZ" secondAttribute="leading" id="rPo-xj-hMS"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -797,7 +797,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6ZD-rn-fZ4" id="yG8-ee-Bnd">
-                                            <frame key="frameInset" width="414" height="99"/>
+                                            <frame key="frameInset" width="414" height="99.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="FMV-yq-dFu">

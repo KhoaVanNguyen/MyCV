@@ -29,7 +29,7 @@ class ContactVC: UIViewController, MFMailComposeViewControllerDelegate, CAAnimat
         
     
         rootView.layer.mask = mask
-        rootView.backgroundColor = UIColor(red: 76/255, green: 174/255, blue: 234/255, alpha: 1)
+      //  rootView.backgroundColor = UIColor(red: 76/255, green: 174/255, blue: 234/255, alpha: 1)
         
         animate()
 

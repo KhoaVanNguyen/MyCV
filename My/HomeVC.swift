@@ -16,6 +16,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var helloLbl: UILabel!
     
     var timer = Timer()
+    var indexJob = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -43,7 +44,7 @@ class HomeVC: UIViewController {
         })
         
         UIView.animate(withDuration: 2.0, delay: 0.5, options: [], animations: {
-            self.view.backgroundColor = UIColor.yellow
+            self.view.backgroundColor = UIColor(red: 64/255.0, green: 136/255.0, blue: 202/255.0, alpha: 1.0)
             }, completion: {
                 finished in
                 self.showHiddenLbl()
@@ -78,9 +79,12 @@ class HomeVC: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(HomeVC.processTimer), userInfo: nil, repeats: true)
     }
     func processTimer(){
-        let jobs = ["Student", "Blogger", "Online Teacher","Bookaholic"]
-        let random = Int(arc4random_uniform(4))
-        jobHiddenLbl.text = jobs[random]
+        let jobs = ["a student", "a blogger", "an online teacher","a bookaholic"]
+        jobHiddenLbl.text = jobs[indexJob]
+        indexJob += 1
+        if indexJob == 4{
+            indexJob = 0
+        }
     }
     func resetValues(){
         timer.invalidate()

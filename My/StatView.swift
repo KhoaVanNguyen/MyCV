@@ -81,28 +81,37 @@ class StatView: UIView {
         bgLayer.lineWidth = 20
         bgLayer.fillColor = nil
         bgLayer.strokeEnd = 1
+        
         layer.addSublayer(bgLayer)
         
         // setup background layer
         fgLayer.lineWidth = 20
         fgLayer.fillColor = nil
         editPercent(range: Total, curValue: CurrentValue)
+       
         layer.addSublayer(fgLayer)
         // setup percent label
         percentLabel.font = UIFont.systemFont(ofSize: 12)
         editTextColor(textColor: TextColor, label: percentLabel)
         editPercent(range: Total, curValue: CurrentValue)
         percentLabel.translatesAutoresizingMaskIntoConstraints = false
+        
         addSubview(percentLabel)
+        
         // setup skill name
         skillLable.font = UIFont.systemFont(ofSize: 12)
         editSkillName(skillName: SkillName)
         editTextColor(textColor: TextColor, label: skillLable)
         skillLable.translatesAutoresizingMaskIntoConstraints = false
+        
         addSubview(skillLable)
         
-        // setup constraints 
+        // setup constraints
         setupConstraints(PercentMargin,SkillNameMarginX,SkillNameMarginY)
+       
+        
+        
+        
     }
     func configure(){
         

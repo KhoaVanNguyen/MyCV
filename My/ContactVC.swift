@@ -19,7 +19,7 @@ class ContactVC: UIViewController, MFMailComposeViewControllerDelegate, CAAnimat
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        // Do any additional setup after loading the view.
+    
         self.mask = CALayer()
         self.mask!.contents = UIImage(named: "contactmask")!.cgImage
         self.mask!.contentsGravity = kCAGravityResizeAspect
@@ -27,8 +27,7 @@ class ContactVC: UIViewController, MFMailComposeViewControllerDelegate, CAAnimat
         self.mask!.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         self.mask!.position = CGPoint(x: view.frame.size.width/2, y: view.frame.size.height/2)
         
-        
-        //add logo as mask to view
+    
         rootView.layer.mask = mask
         rootView.backgroundColor = UIColor(red: 76/255, green: 174/255, blue: 234/255, alpha: 1)
         

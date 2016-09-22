@@ -55,8 +55,8 @@ class MoreVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
         let youtube = SocialLink(name: "Youtube", link: "http://www.youtube.com/c/NIVIKICOM-GO", imageName: "youtube.png")
         let website = SocialLink(name: "Website", link: "http://niviki.com", imageName: "website.png")
         let course = SocialLink(name: "Khóa học hướng đối tượng C++ Udemy", link: "https://www.udemy.com/lap-trinh-huong-doi-tuong-c-co-ban-den-nang-cao/", imageName: "oop banner.jpg")
-        
-        socialLinks.append(contentsOf: [website,youtube, fb, twitter,course])
+        let mybookList = SocialLink(name: "My Booklist", link: "http://niviki.com/my-booklist/", imageName: "mybook.jpg")
+        socialLinks.append(contentsOf: [website,youtube, course, mybookList ,fb, twitter ])
     }
     
 }

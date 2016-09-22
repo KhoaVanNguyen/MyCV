@@ -34,8 +34,6 @@
 		D29587301D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D295872A1D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf */; };
 		D29587321D91A5F600AF1B1D /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29587311D91A5F600AF1B1D /* FancyButton.swift */; };
 		D295C4541D8D9AE50015DCB3 /* CustomAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D295C4531D8D9AE50015DCB3 /* CustomAvatar.swift */; };
-		D2C81C691D93B75000E8DEA0 /* getintouch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2C81C681D93B75000E8DEA0 /* getintouch.jpg */; };
-		D2C81C6B1D93B7B300E8DEA0 /* twitter logo mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C81C6A1D93B7B300E8DEA0 /* twitter logo mask.png */; };
 		D2C81C6D1D93B92900E8DEA0 /* contactmask.png in Resources */ = {isa = PBXBuildFile; fileRef = D2C81C6C1D93B92900E8DEA0 /* contactmask.png */; };
 		D2FFF9481D9360BA00C89690 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FFF9471D9360BA00C89690 /* ContactVC.swift */; };
 /* End PBXBuildFile section */
@@ -91,8 +89,6 @@
 		D295872A1D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		D29587311D91A5F600AF1B1D /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		D295C4531D8D9AE50015DCB3 /* CustomAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAvatar.swift; sourceTree = "<group>"; };
-		D2C81C681D93B75000E8DEA0 /* getintouch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = getintouch.jpg; sourceTree = "<group>"; };
-		D2C81C6A1D93B7B300E8DEA0 /* twitter logo mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter logo mask.png"; sourceTree = "<group>"; };
 		D2C81C6C1D93B92900E8DEA0 /* contactmask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contactmask.png; sourceTree = "<group>"; };
 		D2FFF9471D9360BA00C89690 /* ContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,8 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				D2C81C6C1D93B92900E8DEA0 /* contactmask.png */,
-				D2C81C6A1D93B7B300E8DEA0 /* twitter logo mask.png */,
-				D2C81C681D93B75000E8DEA0 /* getintouch.jpg */,
 				D295871F1D91854900AF1B1D /* SourceCodePro-Light.ttf */,
 				D29587201D91854900AF1B1D /* SourceCodePro-Regular.ttf */,
 				D29587251D91A16D00AF1B1D /* SourceSansPro-Italic.ttf */,
@@ -361,8 +355,6 @@
 				D295872D1D91A16D00AF1B1D /* SourceSansPro-LightItalic.ttf in Resources */,
 				D280611C1D8D8CD50052FAC7 /* Assets.xcassets in Resources */,
 				D295872F1D91A16D00AF1B1D /* SourceSansPro-Semibold.ttf in Resources */,
-				D2C81C691D93B75000E8DEA0 /* getintouch.jpg in Resources */,
-				D2C81C6B1D93B7B300E8DEA0 /* twitter logo mask.png in Resources */,
 				D29587241D91854900AF1B1D /* SourceCodePro-Semibold.ttf in Resources */,
 				D29587301D91A16D00AF1B1D /* SourceSansPro-SemiboldItalic.ttf in Resources */,
 				D295872E1D91A16D00AF1B1D /* SourceSansPro-Regular.ttf in Resources */,

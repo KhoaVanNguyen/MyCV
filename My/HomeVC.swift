@@ -79,10 +79,10 @@ class HomeVC: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(HomeVC.processTimer), userInfo: nil, repeats: true)
     }
     func processTimer(){
-        let jobs = ["a student", "a blogger", "an online teacher","a bookaholic"]
+        let jobs = ["a student", "a blogger", "an online teacher","a bookaholic", "20.333 years old :)", "a straight male ^^"]
         jobHiddenLbl.text = jobs[indexJob]
         indexJob += 1
-        if indexJob == 4{
+        if indexJob == 6{
             indexJob = 0
         }
     }

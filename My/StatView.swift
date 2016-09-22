@@ -149,6 +149,7 @@ class StatView: UIView {
         
         let skillLabelCenterX = skillLable.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: -skillNameMarginX)
         let skillLabelCenterY = skillLable.centerYAnchor.constraint(equalTo: self.bottomAnchor, constant: -skillNameMarginY)
+        
         NSLayoutConstraint.activate([skillLabelCenterX, skillLabelCenterY])
     }
     func editSkillName(skillName : String){
@@ -174,15 +175,15 @@ class StatView: UIView {
         
         let percentChange = abs(fromValue - toValue)
         
-        // 1
+        
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = fromValue
         animation.toValue = toValue
         
-        // 2
+        
         animation.duration = CFTimeInterval(percentChange * 4)
         
-        // 3
+        
         fgLayer.removeAnimation(forKey: "stroke")
         fgLayer.add(animation, forKey: "stroke")
         

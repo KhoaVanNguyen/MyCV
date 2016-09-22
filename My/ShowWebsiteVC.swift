@@ -27,15 +27,11 @@ class ShowWebsiteVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let urlPath = URL(string: _url)
+        let urlPath = URL(string: url)
         
         let urlRequest = URLRequest(url: urlPath!)
         webView.loadRequest(urlRequest)
-        
-        print("|||||||||||||||||||||||||||||||||||||||||||")
-        print( "\(_url)" )
     }
-   
     @IBAction func backBtnPressed(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }

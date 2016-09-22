@@ -8,15 +8,33 @@
 
 import UIKit
 import MessageUI
-class ContactVC: UIViewController, MFMailComposeViewControllerDelegate  {
+import QuartzCore
+class ContactVC: UIViewController, MFMailComposeViewControllerDelegate, CAAnimationDelegate  {
 
-
+    @IBOutlet var rootView: UIView!
+    var mask: CALayer?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        // Do any additional setup after loading the view.
+        self.mask = CALayer()
+        self.mask!.contents = UIImage(named: "contactmask")!.cgImage
+        self.mask!.contentsGravity = kCAGravityResizeAspect
+        self.mask!.bounds = CGRect(x: 0, y: 0, width: 100, height: 100)
+        self.mask!.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        self.mask!.position = CGPoint(x: view.frame.size.width/2, y: view.frame.size.height/2)
+        
+        
+        //add logo as mask to view
+        rootView.layer.mask = mask
+        rootView.backgroundColor = UIColor(red: 76/255, green: 174/255, blue: 234/255, alpha: 1)
+        
+        animate()
+
+    }
     @IBAction func skypeBtnPressed(_ sender: AnyObject) {
         let installed = UIApplication.shared.canOpenURL(URL(string: "skype:")!)
         if installed {
@@ -98,5 +116,42 @@ class ContactVC: UIViewController, MFMailComposeViewControllerDelegate  {
         
         present(alert, animated: true, completion: nil)
     }
+    
+    //MARK:- Animation 
+    func animate() {
+        
+        let keyFrameAnimation = CAKeyframeAnimation(keyPath: "bounds")
+        keyFrameAnimation.delegate = self
+        keyFrameAnimation.duration = 1
+        keyFrameAnimation.beginTime = CACurrentMediaTime() + 0.5 //add delay
+        
+        //start animation
+        let initialBounds = NSValue(cgRect:mask!.bounds)
+        
+        
+        //bounce/zooming effect
+        let middleBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 90, height: 90))
+        let finalBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 512, height: 512))
+        
+        
+        
+        //add NSValues and keytimes
+        keyFrameAnimation.values = [initialBounds, middleBounds, finalBounds]
+        keyFrameAnimation.keyTimes = [0, 0.3, 1]
+        
+        
+        //animation timing functions
+        keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut),CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)]
+        
+        
+        //add animation
+        self.mask?.add(keyFrameAnimation, forKey: "bounds")
+        
+        
+    }
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        rootView.layer.mask = nil
+    }
+
 
 }

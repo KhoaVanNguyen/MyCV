@@ -59,7 +59,8 @@ class StatView: UIView {
     }
     @IBInspectable var CurrentValue : CGFloat = 100{
         didSet{
-            configure()
+            //configure()
+            animate()
         }
     }
     
@@ -109,9 +110,6 @@ class StatView: UIView {
         // setup constraints
         setupConstraints(PercentMargin,SkillNameMarginX,SkillNameMarginY)
        
-        
-        
-        
     }
     func configure(){
         
@@ -162,6 +160,36 @@ class StatView: UIView {
     }
     func editTextColor( textColor : UIColor, label : UILabel ){
         label.textColor = textColor
+    }
+    
+    //MARK:- Animation
+    func animate() {
+        //percentLabel.text = String(format: "%.0f/%.0f", CurrentValue, Total)
+        
+        var fromValue = fgLayer.strokeEnd
+        let toValue = CurrentValue / Total
+        if let presentationLayer = fgLayer.presentation() {
+            fromValue = presentationLayer.strokeEnd
+        }
+        
+        let percentChange = abs(fromValue - toValue)
+        
+        // 1
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.fromValue = fromValue
+        animation.toValue = toValue
+        
+        // 2
+        animation.duration = CFTimeInterval(percentChange * 4)
+        
+        // 3
+        fgLayer.removeAnimation(forKey: "stroke")
+        fgLayer.add(animation, forKey: "stroke")
+        
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        fgLayer.strokeEnd = toValue
+        CATransaction.commit()
     }
 }
 

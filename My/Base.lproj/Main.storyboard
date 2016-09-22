@@ -33,32 +33,32 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Hi :)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <frame key="frameInset" minX="-0.80%" minY="5.46%" width="101.33%" height="44"/>
+                                <frame key="frameInset" minX="-0.48%" minY="5.64%" width="100.72%" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceCodePro-Regular" family="Source Code Pro" pointSize="37"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="I'm" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4bZ-DI-FCy">
-                                <frame key="frameInset" minX="0.53%" minY="18.97%" width="100.00%" height="45"/>
+                                <frame key="frameInset" minX="0.0%" minY="18.81%" width="100.24%" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceCodePro-Regular" family="Source Code Pro" pointSize="36"/>
                                 <color key="textColor" red="0.93363546090000005" green="0.98129818579999994" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-PB-cks">
-                                <frame key="frameInset" minX="0.53%" minY="36.55%" width="100.00%" height="46"/>
+                                <frame key="frameInset" minX="0.0%" minY="36.23%" width="100.24%" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SourceCodePro-Semibold" family="Source Code Pro" pointSize="36"/>
                                 <color key="textColor" red="0.97138717029999999" green="0.98607772439999997" blue="0.94664171090000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Khoa" translatesAutoresizingMaskIntoConstraints="NO" id="b2f-GO-5aK">
-                                <frame key="frameInset" minX="2.67%" minY="46.59%" width="94.67%" height="300"/>
+                                <frame key="frameInset" minX="2.42%" minY="46.22%" width="94.93%" height="299"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -143,12 +143,18 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xc-oJ-Je0" customClass="FancyButton" customModule="MyCV" customModuleProvider="target">
                                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" title="Inbox"/>
+                                                                <connections>
+                                                                    <action selector="inboxBtnPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="FM4-CC-Seh"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNM-1h-Fl5">
                                                                 <color key="backgroundColor" red="0.0" green="0.54509803921568623" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" title="Accept">
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="acceptBtnPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="w1C-6a-2Uc"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -210,7 +216,7 @@
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="BGColor">
                                                                                 <color key="value" red="0.0078431372550000003" green="0.53333333329999999" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="string" keyPath="SkillName" value="Programming"/>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="SkillName" value="IOS"/>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="SkillNameMarginX">
                                                                                 <real key="value" value="0.0"/>
                                                                             </userDefinedRuntimeAttribute>
@@ -224,7 +230,7 @@
                                                                                 <real key="value" value="100"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="CurrentValue">
-                                                                                <real key="value" value="69"/>
+                                                                                <real key="value" value="20"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
@@ -237,7 +243,7 @@
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="BGColor">
                                                                                 <color key="value" red="0.0078431372550000003" green="0.53333333329999999" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="string" keyPath="SkillName" value="Marketing"/>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="SkillName" value="English"/>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="SkillNameMarginX">
                                                                                 <real key="value" value="0.0"/>
                                                                             </userDefinedRuntimeAttribute>
@@ -251,7 +257,7 @@
                                                                                 <real key="value" value="100"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="CurrentValue">
-                                                                                <real key="value" value="80"/>
+                                                                                <real key="value" value="75"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
@@ -268,7 +274,7 @@
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="BGColor">
                                                                                 <color key="value" red="0.0078431372550000003" green="0.53333333329999999" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="string" keyPath="SkillName" value="English"/>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="SkillName" value="Marketing"/>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="SkillNameMarginX">
                                                                                 <real key="value" value="0.0"/>
                                                                             </userDefinedRuntimeAttribute>
@@ -326,7 +332,7 @@
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="BGColor">
                                                                                 <color key="value" red="0.0078431372550000003" green="0.53333333329999999" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             </userDefinedRuntimeAttribute>
-                                                                            <userDefinedRuntimeAttribute type="string" keyPath="SkillName" value="IOS"/>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="SkillName" value="Programming"/>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="SkillNameMarginX">
                                                                                 <real key="value" value="0.0"/>
                                                                             </userDefinedRuntimeAttribute>
@@ -340,7 +346,7 @@
                                                                                 <real key="value" value="100"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="CurrentValue">
-                                                                                <real key="value" value="20"/>
+                                                                                <real key="value" value="69"/>
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
@@ -650,6 +656,9 @@
                     <tabBarItem key="tabBarItem" title="My CV" image="MyResume" id="cPa-gy-q4n"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1490"/>
+                    <connections>
+                        <outlet property="acceptBtn" destination="LNM-1h-Fl5" id="mZr-eG-USz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -658,7 +667,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -685,7 +694,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FEw-4x-ovx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wAY-Ww-IPJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="get-in-touch" translatesAutoresizingMaskIntoConstraints="NO" id="YO7-dQ-4ui">
@@ -750,13 +759,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="ContactMe" image="ContactMe" id="2YY-rp-JIH"/>
+                    <navigationItem key="navigationItem" id="78N-i0-eAX"/>
                     <connections>
                         <outlet property="rootView" destination="wAY-Ww-IPJ" id="7do-5o-xKc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHu-7d-BRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1657.5" y="-102.5"/>
+            <point key="canvasLocation" x="-1702" y="336"/>
         </scene>
         <!--MoreVC-->
         <scene sceneID="Lsh-eW-6Vp">
@@ -767,7 +777,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xRG-TQ-oKj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="T4I-OE-gcT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LightBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="2ai-7B-qMr"/>
@@ -784,10 +794,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SocialCell" rowHeight="100" id="6ZD-rn-fZ4" customClass="SocialCell" customModule="MyCV" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6ZD-rn-fZ4" id="yG8-ee-Bnd">
-                                            <frame key="frameInset" width="375" height="99"/>
+                                            <frame key="frameInset" width="414" height="99.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="FMV-yq-dFu">
@@ -855,7 +865,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zCX-0N-t4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-935" y="-179"/>
+            <point key="canvasLocation" x="-926" y="-34"/>
         </scene>
         <!--Show WebsiteVC-->
         <scene sceneID="VA8-FQ-4HP">
@@ -866,7 +876,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ZO5-HQ-dIR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="T4T-hA-8mr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bd2-U7-bNy">
